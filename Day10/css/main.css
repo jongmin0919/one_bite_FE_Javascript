@@ -34,3 +34,28 @@ body{
   margin-top: -35px;
   
 }
+
+.main-wrapper .search{
+  display: flex;
+  justify-content: center; 
+}
+
+.search #search-input{
+  width: 600px;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  font-size: var(--medium);
+  padding: 15px 0px;
+  border-radius: 30px;
+  border: 0px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.search #search-input::placeholder{
+  color: rgba(169, 169, 169);
+  font-size: var(--medium);
+}
+
+
+
