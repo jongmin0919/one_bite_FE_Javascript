@@ -1,5 +1,6 @@
 const API_UTL = "https://random-quote.hyobb.com/"
 const quoteElement = document.getElementById("quote")
+const quoteItem = localStorage.getItem("quote")
 
 const nowDate = new Date()
 const month = nowDate.getMonth();
@@ -22,4 +23,11 @@ const setQuote = (result) => {
   quoteElement.textContent = result;
 }
 
-getQuote()
+if (quoteItem) {
+  let {createDate, quoteDate} = JSON.parse(quoteItem)
+  if (createDate === `${month}-${date}`) quoteElement.textContent = `"${quoteDate}"`;
+} else {
+  getQuote();
+}
+ 
+getQuote();

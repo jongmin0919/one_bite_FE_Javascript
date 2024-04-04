@@ -21,6 +21,7 @@ body{
 
 .main-container .main-wrapper{
   text-align: center;
+  position: fixed;
 }
 
 .main-wrapper .date{
@@ -57,5 +58,60 @@ body{
   font-size: var(--medium);
 }
 
+.quote{
+  font-size: var(--small);
+  position: fixed;
+  bottom: 0;
+  max-width: 800px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  text-align: center;
+}
 
+.bookmark-open{
+  width: 240px;
+  padding: 15px 30px;
+  font-size: var(--xsmall);
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end; 
+  color: white;
+  background-color: rgb(0,0,0,0.5);
+}
 
+.bookmark-close{
+  width: 240px;
+  padding: 15px 30px;
+  font-size: var(--xsmall);
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end; 
+  color: black;
+  
+}
+
+.bookmark-open div{
+  cursor: pointer;
+}
+
+.bookmark-close div{
+  cursor: pointer;
+}
+
+.bookmark-bar{
+  width: 240px;
+  background-color: rgb(0,0,0,0.5);
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  min-height: calc(100vh - 70px);
+  padding: 10px 30px;
+  color: white;
+}
