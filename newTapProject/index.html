@@ -36,10 +36,32 @@
   </div>
   <div class="bookmark-bar" id="bookmark-bar">
     <!-- 북마크 바 -->
+    <div class="bookmark-item-add-btn" id = "bookmark-item-add-btn">
+      + 북마크 추가
+    </div>
+    <div class="bookmark-item-input-form" id = "bookmark-item-input-form">
+      <div class="bookmark-input">
+        <div class="new-bookmark-name">
+          <div class="label">책 이름</div>
+          <input type="text" id="new-bookmark-name-input">
+        </div>
+        <div class="new-bookmark-url">
+          <div class="label">주소</div>
+          <input type="text" id="new-bookmark-url-input">
+        </div>
+      </div>
+      <div class="bookmark-item-input-btn">
+        <div class="cancel-btn" id = "cancel-btn">취소</div>
+        <div class="add-btn" id = "add-btn">추가</div>
+      </div>
+    </div>
+    <div class="bookmark-list" id="bookmark-list"></div>
   </div>
+  <!-- 스크립트 -->
   <script src = "js/clock.js"></script> 
   <script src = "js/search.js"></script> 
   <script src = "js/quote.js"></script> 
   <script src = "js/bookmark-toggle.js"></script> 
+  <script src = "js/bookmark.js"></script>
 </body>
 </html>
