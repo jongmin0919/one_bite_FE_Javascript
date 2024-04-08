@@ -1,0 +1,93 @@
+:root{
+  --light-green: rgb(20, 162, 184);
+  --light-red: rgb(224, 33, 80);
+  --light-gray: rgb(180, 180, 180);
+}
+
+body {
+  display: flex;
+  justify-content: center; 
+  height: 100vh; 
+  margin: 50px; 
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+.underline {
+  width: 100%; 
+  margin-top: 20px;
+  border: 1px solid var(--light-gray);
+  background-color: var(--light-gray); /* 연한 회색 배경색 지정 */
+}
+
+h1{
+  margin: 40px;
+}
+
+.todo-Container{
+  width: 65%;
+  height: 400px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button{
+  width: 8%;
+  margin-left: 10px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item-container{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.input-section{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+input{
+  width: 90%;
+  height: 25px;
+}
+
+.input-section .add-button{
+  background-color: var(--light-green);
+  border: 2px solid var(--light-green);
+}
+
+.item-section{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.item-section .written-item{
+  width: 90%;
+}
+
+.item-section .item-button{
+  background-color: var(--light-red);
+  border: 2px solid var(--light-red);
+}
+
+.delete-written-item{
+  color: var(--light-gray);
+  width: 90%;
+  text-decoration: line-through;
+}
+
+.delete-item-button{
+  background-color: var(--light-gray);
+  border: 2px solid var(--light-gray);
+}
+
+

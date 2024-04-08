@@ -1,5 +1,5 @@
 (function () {
-  const newBookmarkForm = document.getElementById("bookmark-item-input-form");
+const newBookmarkForm = document.getElementById("bookmark-item-input-form");
 const bookmarkItemList = document.getElementById("bookmark-list");
 
 let bookmarkList = [];
